@@ -1,4 +1,4 @@
-#Desafio 03:
+#Desafio 03
 
 #crie um script Python que leia dois números e tente mostrar a soma entre eles
 
