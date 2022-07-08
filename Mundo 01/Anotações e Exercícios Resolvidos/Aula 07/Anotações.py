@@ -7,7 +7,7 @@ potencia = 2 ** 3 #8
 divisaoInteira = 15 // 4 #3
 restoDivisao = 4 % 3 #1
 
-#Forma de imprimir:
+#Formas de imprimir:
 
 nome = input()
 #alinhado a direita
