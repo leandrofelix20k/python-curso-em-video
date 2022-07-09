@@ -18,4 +18,4 @@ print('{}x8 = {}'.format(num, num * 8))
 print('{}x9 = {}'.format(num, num * 9))
 print('{}x10 = {}'.format(num, num * 10))
 
-print(simbolo, simbolo, simbolo, simbolo)
+print(simbolo * 4)
