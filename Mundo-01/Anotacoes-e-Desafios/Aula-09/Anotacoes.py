@@ -33,7 +33,7 @@ print(frase.count('o'))
 print(frase.count('o',0,13))
 
 #Procurar strings na frase
-print(frase.find('rso'))
+print(frase.find('Curso'))
 
 #Ao colocar uma string que não existe na frase, ele retorna o valor -1
 print(frase.find('Suco'))
