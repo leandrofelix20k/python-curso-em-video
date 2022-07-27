@@ -6,8 +6,7 @@
 #Em que posição aparece a primeira vez
 #Em que posição ela aparece pela última vez
 
-
-frase = str(input('Digite uma frase qualquer: '))
+frase = str(input('Digite uma frase qualquer: ')).strip()#.upper()
 tamFrase = len(frase)
 indice = 0
 ultimo = 0
@@ -18,6 +17,6 @@ while(indice < tamFrase):
     indice = indice + 1
 
 print('A letra "A" aparece {} vez(es)'.format(frase.upper().count('A')))
-print('A letra "A" aparece pela primeira vez no índice {}'. format(frase.upper().find('A')))
-print('A letra "A" aparece pela última vez no índice {}'. format(ultimo))
-
+print('A letra "A" aparece pela primeira vez no índice {}'. format(frase.upper().find('A') + 1))
+print('A letra "A" aparece pela última vez no índice {}'. format(ultimo + 1))
+#print('A letra "A" aparece pela última vez no índice {}'. format(frase.upper().rfind('A') + 1))

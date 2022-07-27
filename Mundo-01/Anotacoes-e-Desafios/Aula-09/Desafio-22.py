@@ -6,7 +6,8 @@
 #Quantas letras ao todo(sem considerar os espaços)
 #Quantas letras tem o primeiro nome
 
-nome = input('Digite seu nome completo: ')
+nome = str(input('Digite seu nome completo: '))#.strip 
+#Já eliminaria os espaços antes e depois
 espacos = nome.count(' ')
 lista = nome.split()
 
