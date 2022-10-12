@@ -1,5 +1,3 @@
-#Desafio 43
-
 #Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
 
 #Abaixo de 18.5: Abaixo do peso
@@ -8,11 +6,11 @@
 #30 até 40: Obesidade
 #Acima de 40: Obesidade Morbida
 
-peso = float(input('Informe seu peso: '))
-altura = float(input('informe sua altura: '))
+peso = float(input('Informe seu peso(Kg): '))
+altura = float(input('informe sua altura(m): '))
 imc = peso / (altura * altura)
 
-print('\nIMC: {:.2f}'.format(imc))
+print('\nIMC: {:.1f}'.format(imc))
 if(imc < 18.5):
     print('Status: ABAIXO DO PESO')
 elif(imc >= 18.5 and imc < 25):

@@ -13,4 +13,4 @@ if(prestMensal > (salario * 0.30)):
     print('EMPRÉSTIMO NEGADO! VALOR DA PRESTAÇÃO MENSAL É SUPERIOR A 30% DO SEU ATUAL SALÁRIO!')
 else:
     print('\nPARABÉNS! SEU EMPRÉSTIMO FOI APROVADO!')
-    print('Você terá que pagar R${:.2f} pelos próximo {} meses'.format(prestMensal, tempo*12))
+    print('Você terá que pagar R${:.2f} pelos próximos {} meses'.format(prestMensal, tempo*12))

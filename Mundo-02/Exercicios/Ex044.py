@@ -1,5 +1,3 @@
-#Desafio 44
-
 #Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
 
 #À vista dinheiro/cheque: 10% de desconto
@@ -33,9 +31,8 @@ elif(condPagamento == 2):
     precoFinal = precoNormal - (0.05 * precoNormal)
     print('Opção 2: Valor final do produto R${:.2f}'.format(precoFinal))
 elif(condPagamento == 3):
-    print('Opção 3: 2 parcelas de R${:.2f}'.format(precoNormal/2))
+    print('Opção 3: 2 parcelas de R${:.2f}, SEM JUROS'.format(precoNormal/2))
 else:
     precoFinal = precoNormal + (0.20 * precoNormal)
     parcelas = int(input('\nDigite em quantas parcelas deseja pagar: '))
-    print('Opção 4: O produto ficou dividido em {} de R${:.2f}'.format(parcelas, precoFinal/parcelas))
-    
+    print('Opção 4: O produto ficou dividido em {} de R${:.2f}, COM JUROS'.format(parcelas, precoFinal/parcelas))
