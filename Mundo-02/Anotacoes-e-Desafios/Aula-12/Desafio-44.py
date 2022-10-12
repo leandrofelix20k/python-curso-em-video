@@ -27,4 +27,3 @@ elif(condPagamento == 3):
 else:
     precoFinal = precoNormal + (0.20 * precoNormal)
     print('Bad Escolha! Opção 4: Valor final do produto R${:.2f}'.format(precoFinal))
-

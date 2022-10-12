@@ -46,3 +46,4 @@ while(jogarNovamente == 1):
         escolha = str(input('1-Pedra\n2-Papel\n3-Tesoura\nOpção: '))
     else:
         print('Obrigado! Volte Sempre!')
+        

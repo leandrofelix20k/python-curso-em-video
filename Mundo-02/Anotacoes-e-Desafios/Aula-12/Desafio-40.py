@@ -15,3 +15,4 @@ elif(media >= 5.0 and media < 7):
     print('RECUPERAÇÃO! VAMOS QUE DÁ!')
 else: 
     print('APROVADO! FOGUETE NÃO TEM RÉ!')
+    
