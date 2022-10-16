@@ -1,5 +1,3 @@
-#Desafio 50
-
 #Desenvolva um programa que leia seis números inteiros e mostre a soma apenas saqueles que forem pares. Se o valor digitado for ímpar, desconsider-o.
 
 print('Digite seis números inteiros:')
@@ -13,4 +11,4 @@ for i in range(0, 6):
         pares += 1
     
 print('A quantidade de números pares foi: {}\nA soma desses números pares é igual a: {}'.format(pares, soma))
-               
+        
