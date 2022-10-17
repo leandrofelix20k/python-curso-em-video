@@ -19,16 +19,17 @@ for i in range(0,4):
 
     mediaIdade += idade / 4
 
-    if(sexo == 'M' and idadeMaisVelho > idade):
+    if(sexo == 'M' and idade > idadeMaisVelho):
         nomeMaisVelho = nome
+        idadeMaisVelho = idade
         cont += 1
     
     if(sexo == 'F' and idade < 20):
         mulheresMenosVinte += 1
 
-print('\nA média de idade do grupo é: {:.0f} Anos'.format(mediaIdade))
+print('\nA média de idade do grupo é: {:.1f} Anos'.format(mediaIdade))
 if(cont > 0):
-    print('O senhor mais velho é: {}'.format(nomeMaisVelho))
+    print('O senhor mais velho tem {} ano(s) e seu nome é {}'.format(idadeMaisVelho, nomeMaisVelho))
 else:
     print('Não consta nenhuma pessoa do sexo masculino nessa lista')
 print('Do grupo, {} mulheres tem menos de 20 anos'.format(mulheresMenosVinte))

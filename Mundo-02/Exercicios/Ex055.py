@@ -13,3 +13,18 @@ for i in range(0, 5):
 
 print('\nO maior peso dentre essa cincos pessoas é: {:.1f}Kg'. format(maiorPeso))
 print('O menor peso é: {:.1f}kg'.format(menorPeso))
+
+'''
+maior = 0
+menor = 0
+for i in range(0, 5):
+    peso = float(input('Pessoas N°{}: '.format(i+1)))
+    if i == 0:
+        maior = peso
+        menor = peso
+    else: 
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+'''
