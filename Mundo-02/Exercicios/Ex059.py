@@ -1,5 +1,3 @@
-#Desafio 59
-
 '''Crie um programa que leia dois valores e mostre um menu na tela:
 [1] soma
 [2] multiplicar
@@ -43,3 +41,4 @@ while opcao != 5:
         print('\n\n')
         print('-Operação inválida! Digite Novamente:-')
     print('\n\n')
+    
