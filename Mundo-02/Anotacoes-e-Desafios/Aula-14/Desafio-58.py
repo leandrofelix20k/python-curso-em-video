@@ -12,7 +12,7 @@ while acertou == 0:
     print('Computador Pensando em número entre 0 e 10...')
     sleep(3)
     print('Pronto!')
-    numAleatorio = random.randint(0, 3)
+    numAleatorio = random.randint(0, 10)
     num = int(input('Tente adivinhar o número que o computador pensou: '))
 
     if(num == numAleatorio):
