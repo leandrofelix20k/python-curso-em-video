@@ -26,6 +26,7 @@ while True:
             pesadas.append(pessoas[:])
         elif pessoas[1] == pesadas[0][1]:
             pesadas.append(pessoas[:])
+
         if pessoas[1] < leves[0][1]:
                 del(leves)
                 leves = []
@@ -40,11 +41,13 @@ while True:
         break
     
 print(f'Foram cadastradas {i} pessoas!')
+
 print(f'O maior peso foi {pesadas[0][1]}Kg. Peso de ', end= '')
 for j in range(0, len(pesadas)):
     print(pesadas[j][0], end= '')
     if j < len(pesadas)-1:
         print(', ', end= '')
+
 print(f'\nO menor peso foi {leves[0][1]}kg. Peso de ', end= '')
 for k in range(0, len(leves)):
     print(leves[k][0], end= '')
