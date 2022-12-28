@@ -17,4 +17,3 @@ for i in range(0, 9):
         matriz[2].append(int(input()))
 
 print('{:-^20}'.format('Matriz 3x3'))
-

@@ -1,5 +1,3 @@
-#Desafio 88
-
 '''
 Faça um programa que ajude um jogador da MEGA SENA a criar palpite.
 O prgrama vai perguntar quantos jogo serão gerados e vai sortear 6 

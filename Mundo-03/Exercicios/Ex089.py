@@ -1,5 +1,3 @@
-#Desafio 89
-
 '''
 Crie um programa que leia o nome e duas notas de vários ficha e 
 guarde tudo em uma lista composta. No final, mostre um boletim
