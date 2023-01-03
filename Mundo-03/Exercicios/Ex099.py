@@ -1,5 +1,3 @@
-#Desafio 99
-
 '''
 Faça um programa que tenha uma função chamada maior, que receba
 vários parâmetros com valores inteiros

@@ -1,5 +1,3 @@
-#Desafio 100
-
 '''
 Faça um programa que tenha uma lista chamada números e duas funções
 chamadas sorteio() e somaPar(). A primeira função vai sortear 5
@@ -25,7 +23,7 @@ def somaPar(num):
     for i in range(0, 5):
         if num[i] % 2 == 0:
             soma += num[i]
-    print(f'Somando os valores pares de {num}, temos {soma}')
+    print(f'Somando os valores pares de {num}, temos {soma}.')
 
 
 numeros = []

@@ -1,5 +1,3 @@
-#**Desafio 98
-
 '''
 Faça um programa que tenha uma função chamada contador(), que receba três parâmetros: início, fim e passo e realize a contagem.
 
