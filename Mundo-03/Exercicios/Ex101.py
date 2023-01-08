@@ -1,5 +1,3 @@
-#Desafio 101
-
 '''
 Crie um programa que tenha uma função chamada voto() que vai
 receber como parâmetro o ano de nasicento de uma pessoa, retornando

@@ -1,5 +1,3 @@
-#Desafio 105 
-
 '''
 Faça um programa que tenha uma função notas() que pode receber
 várias notas de alunos e vai retornar um dicionário com as
@@ -34,6 +32,11 @@ def notas(*n, sit=False):
             if n[i] < turma['menor']:
                 turma['menor'] = n[i]
         turma['media'] = turma['media'] + n[i] / len(n)
+
+    #Outra forma:
+    #turma['maior'] = max(n)
+    #turma['menor'] = min(n)
+    #turma['media'] = sum(n) / len(n)
 
     if sit:
         if turma['media'] < 5:

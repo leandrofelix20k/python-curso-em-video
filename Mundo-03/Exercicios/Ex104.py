@@ -1,5 +1,3 @@
-#Desafio 104
-
 '''
 Crie um programa que tenha a função leiaInt(), que vai funcionar de
 forma semelhante à função input() do python, só que fazendo a
@@ -16,7 +14,7 @@ def leiaInt(n):
         if n.isnumeric():
             return n
         else:
-            print('ERRO! Digite um número válido')
+            print('\033[31mERRO! Digite um número válido\033[m')
     
     
 numero = leiaInt('')

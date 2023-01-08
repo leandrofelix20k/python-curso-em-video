@@ -1,5 +1,3 @@
-#Desafio 103
-
 '''
 Faça um programa que tenha uma função chamada ficha(), que receba
 dois parâmetros: o nome de um jogador e quantos gols ele marcou.
