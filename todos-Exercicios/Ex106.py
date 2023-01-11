@@ -10,24 +10,40 @@ OBS: Use cores
 
 from time import sleep
 
-while True:
-    print('\033[1;30;42m-\033[m' * 50)
-    print('\033[1;30;42m-' * 17, '\033[1;30;42mSistema PyHelp', '\033[1;30;42m-\033[m' * 17)
-    print('\033[1;30;42m-\033[m' * 50)
+c = ('\033[m',          #0 - Sem cor
+     '\033[0;30;41m',   #1 - Vermelho
+     '\033[0;30;42m',   #2 - Verde
+     '\033[0;30;43m',    #3 - Amarelo
+     '\033[0;30;44m',    #4 - Azul
+     '\033[0;30;45m',    #5 - Roxo
+     '\033[7;30m',       #6 - Branco
+    )
 
-    func = str(input('Função ou Biblioteca > ')).lower().strip()
-    if func == 'fim':
-        break
-    
-    print('\033[1;30;41m-\033[m' * 50)
-    print('\033[1;30;41m-' * 8, f'\033[1;30;41mAcessando manual do comando {func}', '\033[1;30;41m-\033[m' * 8)
-    print('\033[1;30;41m-\033[m' * 50)
 
-    sleep(1)
-    print(f'\033[1;30;43m{print.__doc__}\033[m')
-    
+def ajuda(com):
+    titulo(f'Acessando o manual do comando \'{com}\'', 4)
+    print(c[6], end= '')
+    help(com)
+    print(c[0], end= '')
     sleep(2)
 
-print('\033[1;30;41m-\033[m' * 50)
-print('\033[1;30;41m-' * 20, '\033[1;30;41mATÉ LOGO', '\033[1;30;41m-\033[m' * 20)
-print('\033[1;30;41m-\033[m' * 50)
+
+def titulo(msg, cor=0):
+    tam = len(msg) + 6
+    print(c[cor], end= '')
+    print('-' * tam)
+    print(f'   {msg}')
+    print('-' * tam)
+    print(c[0], end= '')
+    sleep(1)
+
+
+while True:
+    titulo('Sistema PyHelp', 2)
+    comando = str(input('Função ou Biblioteca > ')).lower().strip()
+    if comando == 'fim':
+        break
+    else:
+        ajuda(comando)
+
+titulo('VOLTE SEMPRE!')
