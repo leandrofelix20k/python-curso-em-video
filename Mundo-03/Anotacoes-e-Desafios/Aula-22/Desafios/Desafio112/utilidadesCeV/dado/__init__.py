@@ -1,8 +1,10 @@
-def leiaDinheiro(moeda):
+def leiaDinheiro(msg):
     while True:
-        moeda = str(input(moeda))
-        moeda = moeda.replace(',', '.')
+        m = str(input(msg)).strip()
+        m = m.replace(',', '.')
 
-        if moeda.replace('.', '').isdigit():
-            return float(moeda)
+        if m.replace('.', '').isdigit():
+            return float(m)
+        else:
+            print(f'ERRO! {m} não é um preço!')
         
