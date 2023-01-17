@@ -1,5 +1,3 @@
-#Desafio 109
-
 '''
 Adapte o desafio 108, criando uma função adicional chamada moeda que
 consiga mostrar os valores como um valor monetário formatado.
